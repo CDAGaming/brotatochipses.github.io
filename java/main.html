@@ -1,0 +1,161 @@
+<!DOCTYPE>
+	<html>
+
+		<head>
+
+			<title>Roll over</title>
+
+		</head>
+
+		<body>
+			<center><a href=../main.html>Main Hub</a></center>
+			<br>
+			<center><script>
+var oldColor = 'black';
+
+function changeColor() {
+  oldColor = document.body.style.backgroundColor;
+  var newColor = prompt('Enter a color:');
+  document.body.style.backgroundColor = newColor;
+}
+
+function undoColor() {
+  var newColor = oldColor;
+  oldColor = document.body.style.backgroundColor;
+  document.body.style.backgroundColor = newColor;
+}
+</script>
+<button style="background:salmon" onclick='changeColor()'>Color picker!</button>
+<button style="background:salmon"onclick='undoColor()'>Undo color</button></center>
+			<h1><center>Java Script Site!</h1></center>
+	
+	<SCRIPT LANGUAGE=JAVASCRIPT TYPE="TEXT/JAVASCRIPT">
+		
+	
+		function saySomething(message) {
+			alert(message)
+		}
+	
+		// End hiding script from older browsers -->
+	</SCRIPT>	
+</HEAD>
+
+<FORM>
+	<center><INPUT TYPE=BUTTON VALUE="Movie Quote 1" style="background:salmon" onClick="saySomething('Im gonna make him an offer he cant refuse.')"> 
+	<br>
+	<br>
+	<INPUT TYPE=BUTTON VALUE="Movie Quote 2" style="background:salmon" onClick="saySomething('Toto, Ive a feeling were not in Kansas anymore.')">
+	<br>
+	<br>
+	<INPUT TYPE=BUTTON VALUE="Movie Quote 3" style="background:salmon" onClick="saySomething('I love the smell of napalm in the morning.')">
+</FORM>
+<form>
+
+<HEAD>
+	<TITLE>Image Array</TITLE>
+	<P>
+	<SCRIPT LANGUAGE=JAVASCRIPT TYPE="TEXT/JAVASCRIPT">
+	<!-- Hide script from old browsers
+
+	if (document.images) {
+		arrowRed = new Image
+		arrowBlue = new Image
+
+		arrowRed.src = "images/redArrow.gif"
+		arrowBlue.src = "images/blueArrow.gif"
+	}
+	else {
+		arrowRed = ""
+		arrowBlue = ""
+		document.arrow = ""
+	}
+
+	// End hiding script from old browsers -->
+	</SCRIPT>	
+</HEAD>
+<BODY BGCOLOR=WHITE>
+	<A HREF="page2/main.html" onMouseover="document.arrow.src=arrowRed.src" onMouseout="document.arrow.src=arrowBlue.src"><IMG SRC="images/blueArrow.gif" WIDTH=250 HEIGHT=250 BORDER=0 NAME="arrow"></A>
+	</p>
+	<HTML>
+<HTML>
+<HEAD>
+	<TITLE>Image Array</TITLE>
+	<SCRIPT LANGUAGE=JAVASCRIPT TYPE="TEXT/JAVASCRIPT">
+	<!-- Hide script from old browsers
+
+	adImages = new Array("banner1.jpg","banner2.jpg","banner3.jpg")
+	adURL = new Array("negrino.com","sun.com","microsoft.com")
+	thisAd = 0
+	imgCt = adImages.length
+
+	function rotate() {
+		if (document.images) {
+			if (document.adBanner.complete) {
+				thisAd++
+				if (thisAd == imgCt) {
+					thisAd = 0
+				}
+				document.adBanner.src=adImages[thisAd]
+			}
+		  	setTimeout("rotate()", 1 * 1000)
+	  	}
+	}
+	
+	function newLocation() {
+		document.location.href = "http://www." + adURL[thisAd]
+	}
+
+	// End hiding script from old browsers -->
+	</SCRIPT>	
+</HEAD>
+<BODY BGCOLOR=WHITE onLoad="rotate()">
+<CENTER>
+	<a href=page2/main.html><IMG SRC="banner1.jpg" WIDTH=300 HEIGHT=275 NAME="adBanner" BORDER=0></A>
+</CENTER>
+</BODY>
+</HTML>
+			<HTML>
+<HEAD>
+	<TITLE>Image Slideshow</TITLE>
+	<SCRIPT LANGUAGE=JAVASCRIPT TYPE="TEXT/JAVASCRIPT">
+	<!-- Hide script from old browsers
+
+	myPix = new Array("pathfinder.gif","surveyor.gif","surveyor98.gif")
+	thisPic = 0
+	imgCt = myPix.length - 1
+
+	function processPrevious() {
+		if (document.images && thisPic > 0) {
+			thisPic--
+			document.myPicture.src=myPix[thisPic]
+		}
+	}
+
+	function processNext() {
+		if (document.images && thisPic < imgCt) {
+			thisPic++
+			document.myPicture.src=myPix[thisPic]
+		}
+	}
+
+	// End hiding script from old browsers -->
+	</SCRIPT>	
+</HEAD>
+<BODY BGCOLOR=WHITE>
+	<H1 ALIGN=CENTER>US Missions to Mars
+	<P><IMG SRC="pathfinder.gif" NAME="myPicture" WIDTH=201 HEIGHT=155>
+	<P><A HREF="javascript:processPrevious()"><< Previous</A>  <A HREF="javascript:processNext()">Next >></A>
+	</H1>
+</BODY>
+</HTML>
+		
+	
+
+	
+	
+
+	
+	
+		</body>
+	<html>
+
